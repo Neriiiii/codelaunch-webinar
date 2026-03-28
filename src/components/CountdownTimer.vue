@@ -76,6 +76,13 @@ onUnmounted(() => clearInterval(timer))
 
 @media (max-width: 580px) {
   .countdown { gap: 4px; }
-  .cd-block { min-width: 64px; }
+  .cd-block { min-width: 60px; }
+}
+@media (max-width: 400px) {
+  .countdown { gap: 2px; }
+  .cd-block { min-width: 52px; }
+  .cd-num { font-size: 1.6rem; }
+  .cd-sep { font-size: 1.4rem; padding-bottom: 12px; }
+  .cd-unit { font-size: 0.55rem; letter-spacing: 1px; }
 }
 </style>

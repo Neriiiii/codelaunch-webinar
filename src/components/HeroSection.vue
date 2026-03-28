@@ -276,4 +276,12 @@ h1 em {
     gap: 24px;
   }
 }
+@media (max-width: 580px) {
+  .hero-countdown-inner {
+    padding: 0 16px;
+  }
+  .hero-countdown-wrap {
+    padding: 28px 0;
+  }
+}
 </style>
