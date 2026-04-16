@@ -5,7 +5,7 @@
         <div class="faq-intro reveal-l">
           <div class="tag">FAQ</div>
           <h2 class="section-title">Common<br />Questions</h2>
-          <p class="section-sub">Everything you need to know before joining the webinar.</p>
+          <p class="section-sub">Common questions about the CodeLaunch webinar series.</p>
           <div class="divider" style="margin-bottom:32px"></div>
           <div class="faq-contact">
             <i class="fa-regular fa-envelope"></i>
@@ -45,10 +45,10 @@ const faqs = [
   { q: 'Is this webinar really free?',                     a: 'Yes — 100% free. No hidden fees, no credit card required. Simply register and show up on the day.' },
   { q: 'Do I need prior coding experience?',               a: 'Not at all. This series is designed for absolute beginners. All you need is a laptop, a browser, and the willingness to learn.' },
   { q: 'What tools or software do I need?',                a: 'A modern web browser (Chrome or Firefox) and a free text editor like VS Code. We will guide you through setup at the start of Session 1.' },
-  { q: 'Do I need to attend all 3 sessions?',              a: 'We strongly recommend attending all 3 as each session builds on the previous one. However, recordings are available for 7 days after each session.' },
+  { q: 'Do I need to attend all 3 sessions?',              a: 'All 3 sessions have now concluded. Recordings were available for 7 days after each session for registered attendees.' },
   { q: 'Will I receive a certificate?',                    a: 'Yes. Attendees who complete all 3 sessions receive a digital certificate of completion via email within 24 hours of Session 3.' },
   { q: 'What happens after the webinar series?',           a: 'We will share a curated learning roadmap and next steps. You will also receive early-access details for our full HTML-to-JavaScript course.' },
-  { q: 'How many seats are available?',                    a: 'Seats are capped to keep the sessions intimate and interactive. Once the limit is reached, registration closes. Register early.' }
+  { q: 'How many seats are available?',                    a: 'This webinar series has concluded and registration is now closed. Stay tuned for future events.' }
 ]
 </script>
 

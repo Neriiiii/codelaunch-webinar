@@ -55,7 +55,7 @@
                 {{ currentSession.date }}</span
               >
               <span><i class="fa-regular fa-clock"></i> 7:00 PM PHT</span>
-              <span><i class="fa-solid fa-video"></i> Live via Zoom</span>
+              <span><i class="fa-solid fa-video"></i> Session Completed</span>
             </div>
           </div>
         </div>
@@ -96,15 +96,15 @@
       <div class="container">
         <div class="cta-box">
           <div class="cta-left">
-            <h2>Ready to Start Learning?</h2>
+            <h2>Webinar Series Concluded</h2>
             <p>
-              All 6 modules are covered live across 3 free sessions. Register
-              once — get access to everything.
+              All 6 modules were covered live across 3 sessions in April 2026.
+              Registration for this series is now closed.
             </p>
           </div>
-          <RouterLink to="/#register" class="btn-red">
-            <i class="fa-solid fa-arrow-right"></i> Reserve My Free Seat
-          </RouterLink>
+          <span class="btn-closed">
+            <i class="fa-solid fa-lock"></i> Registration Closed
+          </span>
         </div>
       </div>
     </section>
@@ -134,7 +134,7 @@ const sessions = [
     label: "Session 1",
     icon: "fa-brands fa-html5",
     title: "HTML — Building the Structure",
-    date: "April 15, 2026",
+    date: "March 28, 2026",
     desc: "Learn how every webpage is built from the ground up. By the end of this session you will have written and published your very first webpage.",
     modules: [
       {
@@ -174,7 +174,7 @@ const sessions = [
     label: "Session 2",
     icon: "fa-brands fa-css3-alt",
     title: "CSS — Styling & Layout",
-    date: "April 22, 2026",
+    date: "April 4, 2026",
     desc: "Transform your plain HTML page into a beautiful, responsive design using CSS — the language of style on the web.",
     modules: [
       {
@@ -214,7 +214,7 @@ const sessions = [
     label: "Session 3",
     icon: "fa-brands fa-js",
     title: "JavaScript — Making It Interactive",
-    date: "April 29, 2026",
+    date: "April 11, 2026",
     desc: "Bring your HTML and CSS to life. Learn the JavaScript fundamentals needed to build pages that react, respond, and engage users.",
     modules: [
       {
@@ -613,6 +613,15 @@ onMounted(() => {
 .btn-red:hover {
   background: var(--red-d);
   transform: translateY(-2px);
+}
+.btn-closed {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(107, 122, 141, 0.12);
+  color: var(--muted);
+  padding: 16px 36px; border-radius: var(--radius);
+  font-size: 0.9rem; font-weight: 600; white-space: nowrap;
+  border: 1.5px solid rgba(107, 122, 141, 0.2);
+  cursor: default;
 }
 
 @media (max-width: 820px) {

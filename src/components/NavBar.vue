@@ -32,9 +32,7 @@
           </a>
         </li>
         <li>
-          <a :href="homeLink('#register')" class="nav-cta" @click.prevent="scrollTo('#register')">
-            Reserve My Seat
-          </a>
+          <span class="nav-cta nav-cta-closed">Registration Closed</span>
         </li>
       </ul>
       <div class="nav-hamburger" :class="{ open: menuOpen }" @click="toggleMenu" aria-label="Menu">
@@ -49,7 +47,7 @@
       <a @click="scrollTo('#agenda'); menuOpen = false">Agenda</a>
       <RouterLink to="/modules" @click="menuOpen = false">Modules</RouterLink>
       <a @click="scrollTo('#faq');    menuOpen = false">FAQ</a>
-      <a @click="scrollTo('#register'); menuOpen = false" class="mobile-cta">Reserve My Seat</a>
+      <span class="mobile-cta mobile-cta-closed">Registration Closed</span>
     </div>
   </nav>
 </template>
@@ -156,6 +154,14 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 }
 .nav-cta::after { display: none !important; }
 .nav-cta:hover { background: var(--red-d) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(217,43,58,0.45); }
+.nav-cta-closed {
+  background: rgba(107,122,141,0.15) !important;
+  color: var(--muted) !important;
+  box-shadow: none !important;
+  cursor: default !important;
+}
+.nav-cta-closed:hover { transform: none !important; background: rgba(107,122,141,0.15) !important; }
+.mobile-cta-closed { color: var(--muted) !important; cursor: default !important; }
 
 /* Hamburger */
 .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }

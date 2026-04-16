@@ -18,22 +18,21 @@
       </p>
       <div class="hero-meta">
         <div class="hero-meta-item">
-          <i class="fa-solid fa-layer-group"></i> 3 Live Sessions
+          <i class="fa-solid fa-layer-group"></i> 3 Sessions Completed
         </div>
         <div class="hero-meta-item">
-          <i class="fa-regular fa-calendar"></i> Apr 15, 22 &amp; 29, 2026
+          <i class="fa-regular fa-calendar"></i> Mar 28, Apr 4 &amp; 11, 2026
         </div>
         <div class="hero-meta-item">
           <i class="fa-regular fa-clock"></i> 7:00 PM Philippine Time
         </div>
         <div class="hero-meta-item">
-          <i class="fa-solid fa-video"></i> Live via Zoom
+          <i class="fa-solid fa-video"></i> Now Concluded
         </div>
       </div>
       <div class="hero-btns">
-        <RouterLink to="/#register" class="btn-red"
-          ><i class="fa-solid fa-arrow-right"></i> Reserve My Free
-          Seat</RouterLink
+        <span class="btn-closed"
+          ><i class="fa-solid fa-lock"></i> Registration Closed</span
         >
         <RouterLink to="/#agenda" class="btn-outline"
           ><i class="fa-regular fa-file-lines"></i> View Agenda</RouterLink
@@ -44,13 +43,10 @@
     <div class="hero-countdown-wrap">
       <div class="hero-countdown-inner">
         <div class="cd-label">
-          Session 1 Begins In
-          <strong>April 15, 2026 · 7:00 PM PHT</strong>
+          All Sessions Completed
+          <strong>Mar 28, Apr 4 &amp; 11, 2026 · 7:00 PM PHT</strong>
         </div>
         <CountdownTimer />
-        <a href="/#register" class="cd-register">
-          <i class="fa-solid fa-pen-to-square"></i> Register Now
-        </a>
       </div>
     </div>
   </section>
@@ -209,6 +205,14 @@ h1 em {
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.18);
   border-color: rgba(255, 255, 255, 0.6);
+}
+.btn-closed {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255, 255, 255, 0.12); color: rgba(255, 255, 255, 0.45);
+  padding: 15px 34px; border-radius: var(--radius);
+  font-size: 0.9rem; font-weight: 600;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  cursor: not-allowed;
 }
 
 .hero-countdown-wrap {

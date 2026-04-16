@@ -12,18 +12,18 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#learn">Curriculum</a></li>
-            <li><a href="#speaker">Instructor</a></li>
-            <li><a href="#agenda">Session Agenda</a></li>
-            <li><a href="#register">Register</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">Instructor</a></li>
+            <li><a href="#">Session Agenda</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
             <li>
-              <a href="mailto:hello@codelaunch.io"
+              <a href="#"
                 ><i class="fa-regular fa-envelope"></i> hello@codelaunch.io</a
               >
             </li>

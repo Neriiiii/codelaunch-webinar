@@ -19,7 +19,7 @@
         <div class="detail-meta">
           <span><i class="fa-regular fa-clock"></i> {{ module.duration }}</span>
           <span><i class="fa-solid fa-signal"></i> Beginner</span>
-          <span><i class="fa-solid fa-video"></i> Live via Zoom</span>
+          <span><i class="fa-solid fa-video"></i> Recorded Session</span>
         </div>
       </div>
     </section>
@@ -66,11 +66,11 @@
               <span>Level</span><strong>Beginner</strong>
             </div>
             <div class="sidebar-stat">
-              <span>Format</span><strong>Live via Zoom</strong>
+              <span>Format</span><strong>Recorded Session</strong>
             </div>
-            <RouterLink to="/#register" class="sidebar-cta">
-              <i class="fa-solid fa-pen-to-square"></i> Register for Free
-            </RouterLink>
+            <span class="sidebar-cta sidebar-cta-closed">
+              <i class="fa-solid fa-lock"></i> Registration Closed
+            </span>
           </div>
 
           <div class="sidebar-card prereq-card">
@@ -121,7 +121,7 @@ const allModules = [
   {
     id: "html-foundations",
     num: "Module 01",
-    session: "Session 1 · April 15, 2026",
+    session: "Session 1 · March 28, 2026",
     icon: "fa-brands fa-html5",
     duration: "30 min",
     title: "HTML Foundations",
@@ -141,7 +141,7 @@ const allModules = [
   {
     id: "semantic-tags-forms",
     num: "Module 02",
-    session: "Session 1 · April 15, 2026",
+    session: "Session 1 · March 28, 2026",
     icon: "fa-solid fa-file-code",
     duration: "45 min",
     title: "Semantic Tags, Links & Forms",
@@ -161,7 +161,7 @@ const allModules = [
   {
     id: "css-selectors-typography",
     num: "Module 03",
-    session: "Session 2 · April 22, 2026",
+    session: "Session 2 · April 4, 2026",
     icon: "fa-brands fa-css3-alt",
     duration: "35 min",
     title: "Selectors, Colors & Typography",
@@ -181,7 +181,7 @@ const allModules = [
   {
     id: "box-model-flexbox",
     num: "Module 04",
-    session: "Session 2 · April 22, 2026",
+    session: "Session 2 · April 4, 2026",
     icon: "fa-solid fa-table-cells-large",
     duration: "50 min",
     title: "Box Model, Spacing & Flexbox",
@@ -201,7 +201,7 @@ const allModules = [
   {
     id: "javascript-basics",
     num: "Module 05",
-    session: "Session 3 · April 29, 2026",
+    session: "Session 3 · April 11, 2026",
     icon: "fa-brands fa-js",
     duration: "45 min",
     title: "JavaScript Basics & DOM",
@@ -223,7 +223,7 @@ const allModules = [
   {
     id: "events-live-project",
     num: "Module 06",
-    session: "Session 3 · April 29, 2026",
+    session: "Session 3 · April 11, 2026",
     icon: "fa-solid fa-rocket",
     duration: "60 min",
     title: "Events & Live Project Build",
@@ -490,6 +490,16 @@ const nextModule = computed(() => allModules[currentIndex.value + 1] || null);
 .sidebar-cta:hover {
   background: var(--red-d);
   transform: translateY(-1px);
+}
+.sidebar-cta-closed {
+  background: rgba(107, 122, 141, 0.12);
+  color: var(--muted);
+  box-shadow: none;
+  cursor: default;
+}
+.sidebar-cta-closed:hover {
+  transform: none;
+  background: rgba(107, 122, 141, 0.12);
 }
 
 .prereq-card h4 {
